@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EggLinks – Apps on Google Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-detail">
+    <div class="main-layout">
+      <div class="main-content">
+        <!-- Hero: icon LEFT, details right -->
+        <header class="hero">
+          <div class="hero-inner">
+            <div class="hero-icon-wrap">
+              <img src="assets/icon.png" alt="" class="hero-icon" width="128" height="128" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'128\' height=\'128\' viewBox=\'0 0 128 128\'%3E%3Crect fill=\'%231a73e8\' width=\'128\' height=\'128\' rx=\'24\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'36\' font-family=\'sans-serif\'%3EApp%3C/text%3E%3C/svg%3E'">
+            </div>
+            <div class="hero-main">
+              <h1 class="hero-title">EggLinks</h1>
+              <a href="#" class="hero-developer">EggLinks</a>
+              <div class="hero-meta">
+                <div class="meta-item">
+                  <span class="meta-value">50K+</span>
+                  <span class="meta-caption">Downloads</span>
+                </div>
+                <div class="meta-item meta-rating">
+                  <span class="content-badge">PEGI 3</span>
+                  <span class="meta-caption">Content rating</span>
+                  <span class="meta-info" title="Content rating">&#9432;</span>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <button type="button" class="btn-install" id="installBtn">Install</button>
+                <button type="button" class="btn-text">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+                  Share
+                </button>
+                <button type="button" class="btn-text">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Screenshots -->
+        <section class="block">
+          <div class="screenshots-scroll" id="screenshotsWrapper">
+            <div class="screenshots-inner" id="screenshotsTrack"></div>
+          </div>
+        </section>
+
+        <!-- About this app -->
+        <section class="block block-border">
+          <h2 class="block-heading">About this app <span class="block-arrow">›</span></h2>
+          <p class="body-text">
+            EggLinks brings you a simple, reliable way to stay connected and get things done. Built with a focus on quality and ease of use, the app is regularly updated with new features and improvements.
+          </p>
+          <p class="body-muted">Updated on Feb 17, 2026</p>
+          <p class="body-muted">Productivity</p>
+        </section>
+
+        <!-- Data safety -->
+        <section class="block block-border">
+          <h2 class="block-heading">Data safety <span class="block-arrow">›</span></h2>
+          <p class="body-text body-text-small">
+            Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+          </p>
+          <ul class="safety-list">
+            <li>No data shared with third parties</li>
+            <li>No data collected</li>
+            <li>Data is encrypted in transit</li>
+            <li>You can request that data be deleted</li>
+          </ul>
+        </section>
+
+        <!-- What's new -->
+        <section class="block block-border">
+          <h2 class="block-heading">What's new <span class="block-arrow">›</span></h2>
+          <p class="body-muted">User experience enhancements</p>
+        </section>
+
+        <!-- Ratings & reviews -->
+        <section class="block block-border">
+          <h2 class="block-heading">Ratings & reviews</h2>
+          <div class="ratings-grid">
+            <div class="ratings-summary">
+              <span class="ratings-number">4.6</span>
+              <div class="ratings-stars" aria-hidden="true">★★★★★</div>
+              <span class="ratings-count">12,345 reviews</span>
+            </div>
+            <div class="ratings-bars">
+              <div class="bar"><span>5</span><div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div><span>72%</span></div>
+              <div class="bar"><span>4</span><div class="bar-bg"><div class="bar-fill" style="width:18%"></div></div><span>18%</span></div>
+              <div class="bar"><span>3</span><div class="bar-bg"><div class="bar-fill" style="width:6%"></div></div><span>6%</span></div>
+              <div class="bar"><span>2</span><div class="bar-bg"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+              <div class="bar"><span>1</span><div class="bar-bg"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+            </div>
+          </div>
+          <div class="reviews">
+            <article class="review">
+              <div class="review-head">
+                <span class="review-avatar">J</span>
+                <div>
+                  <span class="review-name">John D.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+              <p class="review-body">Amazing app! Exactly what I needed.</p>
+            </article>
+            <article class="review">
+              <div class="review-head">
+                <span class="review-avatar">S</span>
+                <div>
+                  <span class="review-name">Sarah M.</span>
+                  <span class="review-stars">★★★★☆</span>
+                </div>
+              </div>
+              <p class="review-body">Very useful and easy to use.</p>
+            </article>
+            <article class="review">
+              <div class="review-head">
+                <span class="review-avatar">A</span>
+                <div>
+                  <span class="review-name">Alex K.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+              <p class="review-body">Smooth performance, no lag.</p>
+            </article>
+            <article class="review">
+              <div class="review-head">
+                <span class="review-avatar">M</span>
+                <div>
+                  <span class="review-name">Maria L.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+              <p class="review-body">Great design and reliable. Recommended!</p>
+            </article>
+            <article class="review">
+              <div class="review-head">
+                <span class="review-avatar">T</span>
+                <div>
+                  <span class="review-name">Tom R.</span>
+                  <span class="review-stars">★★★★☆</span>
+                </div>
+              </div>
+              <p class="review-body">Simple and effective. Love it.</p>
+            </article>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar card (desktop only) – icon LEFT, then details -->
+      <aside class="sidebar-card">
+        <div class="sidebar-card-inner">
+          <img src="assets/icon.png" alt="" class="hero-icon" width="128" height="128" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'128\' height=\'128\' viewBox=\'0 0 128 128\'%3E%3Crect fill=\'%231a73e8\' width=\'128\' height=\'128\' rx=\'24\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'36\' font-family=\'sans-serif\'%3EApp%3C/text%3E%3C/svg%3E'">
+          <div>
+            <h1 class="hero-title">EggLinks</h1>
+            <a href="#" class="hero-developer">EggLinks</a>
+            <div class="hero-actions">
+              <button type="button" class="btn-install" id="installBtnDesktop">Install</button>
+              <button type="button" class="btn-text">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+                Share
+              </button>
+              <button type="button" class="btn-text">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Add to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

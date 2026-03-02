@@ -1,33 +1,22 @@
 (function () {
   'use strict';
 
-  var APK_URL = 'assets/apk/app-release.apk';
   var SCREENSHOTS_BASE = 'assets/screenshots/';
   var SCREENSHOT_NAMES = ['1.png', '2.png', '3.png', '4.png', '5.png'];
 
-  function initInstallButton() {
-    var apkUrl = APK_URL;
-    function doInstall() {
-      var a = document.createElement('a');
-      a.href = apkUrl;
-      a.download = 'app-release.apk';
-      a.style.display = 'none';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
-    var btn = document.getElementById('installBtn');
-    if (btn) btn.addEventListener('click', doInstall);
-    var btnDesktop = document.getElementById('installBtnDesktop');
-    if (btnDesktop) btnDesktop.addEventListener('click', doInstall);
-  }
+  const installBtn = document.getElementById('installBtn');
+
+installBtn.addEventListener('click', () => {
+  installBtn.innerText = "Downloading…";
+  installBtn.style.backgroundColor = "#4CAF50"; // optional: change color
+});
 
   function loadScreenshots() {
     var track = document.getElementById('screenshotsTrack');
     if (!track) return;
 
     var placeholderSvg = 'data:image/svg+xml,' + encodeURIComponent(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="355" viewBox="0 0 200 355"><rect fill="%23f1f3f4" width="200" height="355"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%239aa0a6" font-family="sans-serif" font-size="13">Screenshot</text></svg>'
+      '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="355" viewBox="0 0 200 355"><rect fill="%23e8eaed" width="200" height="355"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%239aa0a6" font-family="sans-serif" font-size="14">Screenshot</text></svg>'
     );
 
     SCREENSHOT_NAMES.forEach(function (name, index) {
@@ -67,7 +56,6 @@
     }, { passive: true });
   }
 
-  initInstallButton();
   loadScreenshots();
   initSwipeableScreenshots();
 })();
